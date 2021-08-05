@@ -19,7 +19,7 @@ public class MainVerticle extends AbstractVerticle {
     public void start(Promise<Void> start) {
         // Sequential Composition - Do A, Then B, Then C . . . . Handle errors
         // https://vertx.io/docs/vertx-core/java/#_sequential_composition
-        // Here is where I add!
+        // Test!
         doConfig()
             .compose(this::storeConfig)
             .compose(this::deployOtherVerticles)
